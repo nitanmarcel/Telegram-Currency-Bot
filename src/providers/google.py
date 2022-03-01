@@ -3,7 +3,6 @@ import aiohttp
 from bs4 import BeautifulSoup
 
 from utils.price_parser import parse_currency, format_currency
-from utils.currencies import  _currencies
 from utils.date_parser import format_datetime
 
 URL = "https://google.com/search?q="
