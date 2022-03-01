@@ -17,8 +17,8 @@ async def convert(query):
                 query = js["query"]
                 date = js["info"]["timestamp"]
 
-                frmt_amount = format_currency(query['amount'], currency.from_currency)
-                frmt_result = format_currency(result, currency.to_currency)
+                frmt_amount = format_currency(query['amount'])
+                frmt_result = format_currency(result)
                 frmt_from = _currencies[currency.from_currency][0]
                 frmt_to = _currencies[currency.to_currency][0]
                 frmt_date = format_datetime(date)

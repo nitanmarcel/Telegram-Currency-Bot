@@ -3,6 +3,7 @@ from .types import Currency
 
 from decimal import Decimal
 from typing import List, Optional
+from math import ceil, log10
 
 import re
 
@@ -16,10 +17,8 @@ def parse_currency(query) -> Optional[Currency]:
     if from_currency in _currencies.keys() and to_currency in _currencies.keys():
         return Currency(from_currency, to_currency, Decimal(str_amount))
 
-def format_currency(amount, currency):
-    decimals = int(_currencies[currency][1])
+def format_currency(amount):
+    decimal = 2
     if amount < 1:
-        _ = 1
-        while amount < (_ := round(_ * 0.1, decimals)):
-            decimals += 1
-    return "{:.{}f}". format(amount, decimals)
+        decimal = ceil(-log10(a - int(a))) + 1
+    return '%.*f' % (decimal, amount)
