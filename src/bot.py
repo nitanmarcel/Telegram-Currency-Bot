@@ -64,7 +64,7 @@ async def convert(event):
         result, date = api
         await event.answer([builder.article(title=result, description=date,
                                             text=f"{result}\n**Last updated ·** `{date}`")],
-                           cache_time=30 * 60)
+                           cache_time=config.CACHE_TIME)
     else:
         await event.answer([await builder.article(title="Invalid Query!", description="Click to learn more!",
                                                   text=START_TEXT)])

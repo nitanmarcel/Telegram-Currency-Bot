@@ -5,3 +5,4 @@ API_HASH: str = 'a'
 TOKEN: str = 'b'
 
 FIXER_KEY = '0'
+CACHE_TIME = 10 * 60
