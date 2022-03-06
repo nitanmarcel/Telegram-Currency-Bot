@@ -1,0 +1,17 @@
+Telegram bot that exchanges currencies using the midmarket rates.
+All exchange rate data delivered by Fixer is midpoint data. Midpoint rates are determined by calculating the average median rate of Bid and Ask at a certain time.
+
+**Usage - Inline only:**
+Inline by writing the bot's username handler followed by a number and two currencies. Parts of currency names can be also used.
+
+E.G:
+· @currconverter_bot 20 EUR in USD
+or
+· @currconverter_bot 20 Euro in Dollar
+
+**Donate: **
+· [PayPal](https://www.paypal.com/paypalme/marcelalexandrunitan)
+· [Revolut](https://pay.revolut.com/profile/nitanmarcel)]
+
+**Source code:**
+· [GitHub](https://github.com/nitanmarcel/Telegram-Currency-Bot)

@@ -1,0 +1,5 @@
+venv/
+.idea/
+**.session*
+**__pycache__
+src/config.py
